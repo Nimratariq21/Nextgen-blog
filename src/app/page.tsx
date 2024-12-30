@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CardContent } from "@/components/ui/card";
+import CommentSection from "@/components/CommentSection";
+
+
+
 
 async function getData() {
   const query = `
@@ -48,6 +52,11 @@ export default async function Home() {
           </CardContent>
          </Card>
       ))}
+      <br/>
+      <div>
+        <CommentSection/>
+      </div>
     </div>
+    
   );
 }
